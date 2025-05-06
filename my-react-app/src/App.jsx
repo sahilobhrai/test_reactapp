@@ -186,7 +186,7 @@ export default function BuildnBoostLanding() {
       linkedin: 'https://www.linkedin.com/in/abhishek-singh29/'
     },
     {
-      name: 'Mimanshamimansha burakoti',
+      name: 'Mimansha burakoti',
       role: 'Digital Marketing',
       bio: 'Boosts online presence through targeted SEO and marketing strategies that drive traffic and engagement.',
       photo: mimanshaImage,
