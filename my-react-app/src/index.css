@@ -2,3 +2,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Scroll animation styles */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .scroll-animate.animate-fadeInUp {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Floating animation for particles */
+  @keyframes float {
+    0% {
+      transform: translateY(0) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) translateX(20px);
+      opacity: 0;
+    }
+  }
+  
+  /* Scroll indicator animation */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes scrollIndicator {
+    0% {
+      transform: translateY(0);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+  }
+  
+  .animate-bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  .animate-scrollIndicator {
+    animation: scrollIndicator 2s infinite;
+  }
+
+  /* Pop-in animation for modal */
+.animate-pop-in {
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.223, 0.674)}
